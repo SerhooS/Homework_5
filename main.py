@@ -85,3 +85,31 @@ try:
 
 except Exception as e:
     print(f"Виникла помилка: {e}")
+
+
+####### Завдання 2
+try:
+    # Створити список цілих, що містить лише парні числа з першого списку
+
+    even_numbers = [num for num in random_numbers if num % 2 == 0]
+
+    # Створити список цілих, що містить лише непарні числа з першого списку;
+
+    odd_numbers = [num for num in random_numbers if num % 2 != 0]
+
+    # Створити список цілих, що містить лише негативні числа з першого списку;
+
+    negative_numbers = [num for num in random_numbers if num < 0]
+
+    # Створити список цілих, що містить лише позитивні числа з першого списку.
+
+    positive_numbers = [num for num in random_numbers if num > 0]
+
+    print("Список цілих чисел:", random_numbers)
+    print("Список парних чисел:", even_numbers)
+    print("Список непарних чисел:", odd_numbers)
+    print("Список негативних чисел:", negative_numbers)
+    print("Список позитивних чисел:", positive_numbers)
+
+except Exception as e:
+    print(f"Виникла помилка: {e}")
